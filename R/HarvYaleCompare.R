@@ -91,6 +91,7 @@ g + geom_col(color = "black", size=0.05) +
     scale_x_continuous(breaks=seq(1,10), labels=c("1","2","3","4","5","6","7","8","9","10")) +
     scale_fill_manual(values=rev(brewer.pal(9,"Blues")[seq(1,9,2)]))
 ggsave("../FiguresAndTables/AIrepYale.pdf", device = "pdf", width=7.75, height = 6, units = "in")
+ggsave("../FiguresAndTables/AIrepYale.eps", device = "eps", width=7.75, height = 6, units = "in")
 
 #------------------------------------------------------------------------------
 # FIGURE: Yale admit rates by race and AI decile
@@ -101,6 +102,7 @@ g + geom_line(aes(color=Group)) +
   theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_line(size = 0.05), panel.grid.major.x = element_line(size = 0.05), axis.text.y = element_text(color = "black"), axis.text.x = element_text(color = "black"), axis.title.x = element_text(color = "black"), axis.title.y = element_text(color = "black"), legend.position="bottom", panel.border = element_rect(color="black", fill=NA)) + 
   scale_x_continuous(breaks=seq(1,10), labels=c("1","2","3","4","5","6","7","8","9","10")) + scale_color_colorblind() + scale_y_continuous(limits = c(0,62), breaks = seq(0,60,by=10))
 ggsave("../FiguresAndTables/AIadmrateYale.pdf", device = "pdf", width=7.75, height = 6, units = "in")
+ggsave("../FiguresAndTables/AIadmrateYale.eps", device = "eps", width=7.75, height = 6, units = "in")
 
 
 
@@ -129,6 +131,7 @@ g + geom_line(aes(color=Group)) +
   theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_line(size = 0.05), panel.grid.major.x = element_line(size = 0.05), axis.text.y = element_text(color = "black"), axis.text.x = element_text(color = "black"), axis.title.x = element_text(color = "black"), axis.title.y = element_text(color = "black"), legend.position="bottom", panel.border = element_rect(color="black", fill=NA)) + 
   scale_color_colorblind() + scale_y_continuous(limits = c(0,62), breaks = seq(0,60,by=10)) + scale_x_continuous(breaks=seq(1,10), labels=c("1","2","3","4","5","6","7","8","9","10"))
 ggsave("../FiguresAndTables/AIadmrateHarv.pdf", device = "pdf", width=7.75, height = 6, units = "in")
+ggsave("../FiguresAndTables/AIadmrateHarv.eps", device = "eps", width=7.75, height = 6, units = "in")
 
 #------------------------------------------------------------------------------
 # FIGURE: Harvard distribution of race by AI decile
@@ -156,5 +159,6 @@ g + geom_col(color = "black", size=0.05) +
   scale_x_continuous(breaks=seq(1,10), labels=c("1","2","3","4","5","6","7","8","9","10")) +
   scale_fill_manual(values=rev(brewer.pal(9,"Blues")[seq(1,9,2)]))
 ggsave("../FiguresAndTables/AIrepHarv.pdf", device = "pdf", width=7.75, height = 6, units = "in")
+ggsave("../FiguresAndTables/AIrepHarv.eps", device = "eps", width=7.75, height = 6, units = "in")
 
 
