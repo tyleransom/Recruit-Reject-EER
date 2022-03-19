@@ -47,5 +47,6 @@ screenposition = get(gcf,'Position');
 set(gcf,...
     'PaperPosition',[0 0 screenposition(3:4)],...
     'PaperSize',[screenposition(3:4)]);
+saveas(gcf,'../FiguresAndTables/topScoringAdmRateRatioAll','eps');
 print('-dpdf','-painters','../FiguresAndTables/topScoringAdmRateRatioAll');
 
